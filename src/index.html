@@ -4,6 +4,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- s -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+
+
     <!-- Font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -59,7 +63,7 @@
                     <div class="flex items-center gap-2 justify-between mt-3">
                         <p class="font-bold text-lg">R$18,90</p>
                         <button class="bg-gray-900 px-5 rounded add-to-cart-btn" data-name="Hamburguer Smash"
-                            data-price="18,19">
+                            data-price="18.19">
 
                             <i class="fa fa-cart-plus text-lg text-white"></i>
                         </button>
@@ -82,7 +86,7 @@
                     <div class="flex items-center gap-2 justify-between mt-3">
                         <p class="font-bold text-lg">R$32,90</p>
                         <button class="bg-gray-900 px-5 rounded add-to-cart-btn" data-name="Hamburguer Duplo"
-                            data-price="32,90">
+                            data-price="32.90">
 
                             <i class="fa fa-cart-plus text-lg text-white"></i>
                         </button>
@@ -105,7 +109,7 @@
                     <div class="flex items-center gap-2 justify-between mt-3">
                         <p class="font-bold text-lg">R$35,90</p>
                         <button class="bg-gray-900 px-5 rounded add-to-cart-btn" data-name="Hamburguer Salad"
-                            data-price="35,90">
+                            data-price="35.90">
 
                             <i class="fa fa-cart-plus text-lg text-white"></i>
                         </button>
@@ -128,7 +132,7 @@
                     <div class="flex items-center gap-2 justify-between mt-3">
                         <p class="font-bold text-lg">R$30,00</p>
                         <button class="bg-gray-900 px-5 rounded add-to-cart-btn" data-name="Hamburguer da casa"
-                            data-price="30,00">
+                            data-price="30.00">
 
                             <i class="fa fa-cart-plus text-lg text-white"></i>
                         </button>
@@ -163,7 +167,7 @@
 
                     <div class="flex items-center gap-2 justify-between mt-3">
                         <p class="font-bold text-lg">R$5,99</p>
-                        <button class="bg-gray-900 px-5 rounded add-to-cart-btn" data-name="Hamburguer Smash"
+                        <button class="bg-gray-900 px-5 rounded add-to-cart-btn" data-name="Coca-cola lata"
                             data-price="5,99">
 
                             <i class="fa fa-cart-plus text-lg text-white"></i>
@@ -185,7 +189,7 @@
 
                     <div class="flex items-center gap-2 justify-between mt-3">
                         <p class="font-bold text-lg">R$5,99</p>
-                        <button class="bg-gray-900 px-5 rounded add-to-cart-btn" data-name="Hamburguer Smash"
+                        <button class="bg-gray-900 px-5 rounded add-to-cart-btn" data-name="Guarana lata"
                             data-price="5,99">
 
                             <i class="fa fa-cart-plus text-lg text-white"></i>
@@ -201,7 +205,7 @@
     <!-- FIM MENU -->
 
     <!-- MODAL CART -->
-    <div class="bg-black/60 w-full h-full fixed top-0 left-0 z-[99] items-center justify-center hidden">
+    <div id="cart-modal" class="bg-black/60 w-full h-full fixed top-0 left-0 z-[99] items-center justify-center hidden">
         <div class="bg-white p-5 rounded-md min-w-[90%] md:min-w-[600px]">
             <h2 class="text-center font-bold text-2xl mb-2">Meu Carrionho</h2>
 
@@ -211,10 +215,10 @@
 
             <p class="font-bold mt-4">Endereço de entrega: </p>
 
-            <input type="text" placeholder="Digite seu endereço completo..." id="address"
+            <input id="address" type="text" placeholder="Digite seu endereço completo..."
                 class="w-full border-2 p-1 rounded my-1">
 
-            <p class="text-red-500 hidden" id="address-warn">Digite seu endereço completo</p>
+            <p id="address-warn" class="text-red-500 hidden">Digite seu endereço completo</p>
 
             <div class="flex items-center justify-between mt-5 w-full">
                 <button id="close-modal-btn">Fechar</button>
@@ -227,13 +231,17 @@
 
     <!-- BUTTON CART FOOTER -->
     <footer class="w-full bg-red-500 py-4 fixed bottom-0 z-40 flex items-center justify-center">
-        <button class="flex items-center gap-2 text-white font-bold" id="cart-btn">
+        <button id="cart-btn" class="flex items-center gap-2 text-white font-bold">
             (<span id="cart-count">0</span>)
             Veja meu carrinho
             <i class="fa fa-cart-plus text-lg text-white"></i>
         </button>
     </footer>
     <!-- FIM BUTTON CART FOOTER -->
+     
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+    <script src="script.js"></script>
 </body>
 
 </html>
+
