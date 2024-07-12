@@ -1,17 +1,17 @@
 # Hamburgueria Dev Burguer
-[![NPM](https://img.shields.io/npm/l/react)](https://github.com/Rodrigopcosta/Calcular-IMC/blob/main/LICENSE) 
+[![NPM](https://img.shields.io/npm/l/react)](https://github.com/Rodrigopcosta/Dev-Burguer/blob/main/LICENSE) 
 
 https://imccalculation.netlify.app/
 
-Este é um site para a Hamburgueria Dev Burguer, desenvolvido com HTML, TailwindCSS e JavaScript. O site permite aos clientes realizar pedidos de hamburgueres, verificar o horário de funcionamento e adicionar um endereço para entrega.
+Este é um site para a Hamburgueria Dev Burguer, desenvolvido com HTML, TailwindCSS e JavaScript. O site permite aos clientes realizar pedidos de hamburgueres, verificar o horário de funcionamento e adicionar um endereço para entrega. Além disso, o projeto é totalmente responsivo, garantindo uma experiência consistente em dispositivos móveis e desktops.
 
 ## Funcionalidades
 
-- **Horário de Funcionamento**: O site exibe o horário de funcionamento da hamburgueria. Durante o horário de fechamento, certas funcionalidades podem ser limitadas.
+- **Horário de Funcionamento**: O site exibe o horário de funcionamento da hamburgueria. Após o horário de expediente, certas funcionalidades podem ser limitadas.
 - **Adição de Itens ao Carrinho**: Os clientes podem adicionar itens ao carrinho de compras através de funcionalidades JavaScript.
 - **Visualização e Remoção de Itens**: É possível visualizar e remover itens do carrinho antes de finalizar o pedido.
 - **Cálculo do Valor Total**: O site calcula automaticamente o valor total dos itens selecionados pelo cliente.
-- **Adição de Endereço**: Os clientes têm a opção de adicionar um endereço para entrega.
+- **Adição de Endereço**: Os clientes têm um campo para adicionar o endereço de entrega.
 - **Integração com API do WhatsApp**: Os pedidos são enviados para uma API do WhatsApp, onde são detalhados os itens pedidos, endereço e valor total.
 
 
@@ -23,11 +23,16 @@ Este é um site para a Hamburgueria Dev Burguer, desenvolvido com HTML, Tailwind
 
 ## Imagens do Projeto
 
-![Calculadora de IMC no Computador](./src/assets/Calculadora.png )
+- Pagina Principal
+ 
+![Página Principal da Hamburgueria Dev Burguer](./assets/ImagemSite/DevBurguer.png)
+
+
+- Carrinho de pedidos
+  
+![Carrinho de pedidos](./assets/ImagemSite/Pedido.png)
 Designed by Freepik
 
-![Calculadora de IMC no Computador](./src/assets/Pedido.png )
-Designed by Freepik
 
 Para executar este projeto localmente, siga os passos abaixo:
 
@@ -59,6 +64,7 @@ Para executar este projeto localmente, siga os passos abaixo:
 hamburgueria/
 ├── assets/
 │   ├──ImagemSite
+│   │   └──...
 │   └──...
 │
 ├── index.html
