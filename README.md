@@ -1,7 +1,7 @@
 # Hamburgueria Dev Burguer
 [![NPM](https://img.shields.io/npm/l/react)](https://github.com/Rodrigopcosta/Dev-Burguer/blob/main/LICENSE) 
 
-https://imccalculation.netlify.app/
+https://newdevburguer.netlify.app/
 
 Este é um site para a Hamburgueria Dev Burguer, desenvolvido com HTML, TailwindCSS e JavaScript. O site permite aos clientes realizar pedidos de hamburgueres, verificar o horário de funcionamento e adicionar um endereço para entrega. Além disso, o projeto é totalmente responsivo, garantindo uma experiência consistente em dispositivos móveis e desktops.
 
